@@ -268,6 +268,169 @@ weight_on_planet = num2 * gravity
 print(f"Your weight on {planet} would be: {weight_on_planet:}")'''
 
 
+#grade finder 
+
+'''
+sub1=float(input("enter sub marks :"))
+sub2=float(input("enter second subject marks :"))
+sub3=float(input("enter third subject marks :"))
+sub4=float(input("enter 4th subject marks :"))
+totalmarks=sub1+sub2+sub3+sub4
+percentage=(totalmarks/400)*100
+if percentage >70:
+    print("distinction ")
+elif percentage > 60 :
+    print("first div ")
+elif percentage >40:
+    print("pass")
+else :
+    print("fail") '''
+
+
+# Program to calculate road tax based on bike cost price
+
+'''cost = float(input("Enter the cost price of the bike (in Rs): "))
+if cost > 100000:
+    tax = cost * 0.15
+elif cost > 50000:
+    tax = cost * 0.10
+else:
+    tax = cost * 0.05
+print(" ROAD TAX DETAILS ")
+print("Cost Price:", cost)
+print("Road Tax to be Paid:", tax) '''
+
+
+# calculate bonus
+
+'''years = float(input("How many years have you worked? "))
+salary = float(input("Enter your salary: "))
+
+if years > 10:
+    bonus = salary * 0.10
+elif years >= 6:
+    bonus = salary * 0.08
+else:
+    bonus = salary * 0.05
+
+print("Your bonus amount is:", bonus) '''
+
+
+
+# Program to give feedback based on subject score
+'''
+score = float(input("Enter your subject score: "))
+
+if score > 90:
+    print(" Congratulations!")
+elif score >= 50:
+    print(" Not bad! You can still improve.")
+else:
+    print(" You should retake the course and try again.") '''
+
+
+
+
+
+#gender and wages finder 
+'''
+age = int(input("Enter your age: "))
+gender = input("Enter your gender (male/female): ").lower()
+
+if gender == "male":
+    if 18 <= age < 30:
+        print("700")
+    elif 30 <= age <= 40:
+        print("800")
+    else:
+        print("no category matched")
+
+elif gender == "female":
+    if 18 <= age < 30:
+        print("750")
+    elif 30 <= age <= 40:
+        print("850")
+    else:
+        print("no category matched")
+
+else:
+    print("Invalid gender input") '''
+
+
+
+
+# Simple ATM Simulation
+'''
+is_valid = True
+balance = 50000
+correct_pin = 123
+
+if is_valid:
+    pin = int(input("Enter your PIN: "))
+    
+    if pin == correct_pin:
+        print("\nWelcome! Please choose an option:")
+        print("1. Withdraw")
+        print("2. Check Balance")
+        print("3. Exit")
+        
+        option = int(input("Enter your choice (1-3): "))
+        
+        if option == 1:
+            amount = float(input("Enter amount to withdraw: "))
+            if amount <= balance:
+                balance -= amount
+                print("Please collect your cash.")
+                print("Remaining balance:", balance)
+            else:
+                print("Insufficient balance!")
+                
+        else:
+            if option == 2:
+                print("Your current balance is:", balance)
+            else:
+                if option == 3:
+                    print("Thank you for visiting!")
+                else:
+                    print("Invalid option selected!")
+                    
+    else:
+        print("Incorrect PIN!")
+        
+else: 
+    print("Invalid card!") '''
+
+
+
+
+#forest game 
+'''print("Welcome to the Magic Forest")
+
+choice = input("Enter where you want to go ('north' or 'south'): ").lower()
+
+if choice == "south":
+    print("Game Over")
+else:
+    if choice == "north":
+        river_path = input("Do you want to 'cross the river' or 'follow the path'? ").lower()
+        
+        if river_path == "cross the river":
+            print("Game Over")
+        elif river_path == "follow the path":
+            creature = input("Choose your companion: 'fairy', 'ogre', or 'elf': ").lower()
+            
+            if creature == "ogre" or creature == "fairy":
+                print("Game Over")
+            elif creature == "elf":
+                print("You Win")
+            else:
+                print("Invalid choice")
+        else:
+            print("Invalid choice")
+    else:
+        print("Invalid choice")'''
+
+
     
     
 
